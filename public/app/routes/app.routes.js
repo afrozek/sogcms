@@ -25,21 +25,20 @@ angular.module('app')
 
 		})
 
-		.state('app.home',{
-			url: '/home',
-			template: '<h1> home view </h1>',
-			templateUrl:'components/home/views/app.home.html',
-			// controller: 'homeCtrl',
-			// controllerAs: 'home',
-			data: {
-				permission: false,
-				permissionLevel: ['everyone']
-			}
-		})
+		// .state('app.home',{
+		// 	url: '/home',
+		// 	template: '<h1> home view </h1>',
+		// 	templateUrl:'components/home/views/app.home.html',
+		// 	// controller: 'homeCtrl',
+		// 	// controllerAs: 'home',
+		// 	data: {
+		// 		permission: false,
+		// 		permissionLevel: ['everyone']
+		// 	}
+		// })
 
 		.state('app.docs',{
 			url: '/docs',
-			template: '<h1> docs view </h1>',
 			templateUrl:'components/docs/views/docs.view.html',
 			controller: 'docsCtrl',
 			controllerAs: 'docs',

@@ -17,17 +17,17 @@ var appComponents = './public/components/**/**/*.js';
 
 //js
 gulp.task('concatMinifyJs', function () {
-	return gulp.src([mainApp, './public/app/main.js', appComponents])
+	return gulp.src([appComponents, mainApp, '!./public/app/main.js' ])
 			.pipe(sourcemaps.init())
-			.pipe(concat('/public/app/main.js'))
-			//.pipe(uglify())
+			.pipe(concat('./public/app/main.js'))
+			// .pipe(uglify())
 			.pipe(sourcemaps.write())
-			.pipe(gulp.dest('./public/app/'));
+			.pipe(gulp.dest('./'));
 });
 
 //watcher
 gulp.task('watchJs', function () {
-	gulp.watch([mainApp,appComponents], ['concatMinifyJs']);
+	gulp.watch([mainApp, appComponents], ['concatMinifyJs']);
 });
 
 
