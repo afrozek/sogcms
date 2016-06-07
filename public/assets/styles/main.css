@@ -1,0 +1,106 @@
+/*variables*/
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Muli", "Times", "Sans-Serif"; }
+
+::-webkit-scrollbar {
+  border-radius: 0;
+  width: .5em; }
+
+::-webkit-scrollbar-track {
+  background: #ccc; }
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey; }
+
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+/*helpers*/
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+.clearPadding {
+  padding: 0; }
+
+.clearLeftPadding {
+  padding-left: 0; }
+
+.clearRightPadding {
+  padding-right: 0; }
+
+.clearMargin {
+  margin: 0; }
+
+.centerText {
+  text-align: center; }
+
+.centerDiv {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fullHeight {
+  height: 100%;
+  /* overflow: auto; */ }
+
+.fullWidth {
+  width: 100% !important; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.outline {
+  outline: 1px solid white !important; }
+
+.centerText {
+  text-align: center; }
+
+.overflow {
+  overflow: auto; }
+
+.padding5 {
+  padding: 5px; }
+
+.padding10 {
+  padding: 10px; }
+
+.paddingTopBottom {
+  padding: 20px 0px; }
+
+/*fontawsome helpers*/
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
